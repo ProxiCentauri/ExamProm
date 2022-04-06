@@ -3,9 +3,13 @@ plugins {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
+
 }
 
 dependencies {
     testImplementation 'junit:junit:4.13.1'
 }
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
